@@ -2,9 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.3.
 
+## Docker
+
+```
+docker run -v ${PWD}:/app -p 4200:4200 -it johnpapa/angular-cli /bin/sh
+
+# in docker
+npm install
+ng serve --host=0.0.0.0
+```
+
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve --host=0.0.0.0` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
